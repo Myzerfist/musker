@@ -48,3 +48,23 @@
     Sleep(50)
     Send("{Enter}")
 }
+
+; Open Python folder on my pc with Ctrl + Alt + P
+^!p:: {
+    Send("{LWin down}r{LWin up}")
+    Sleep(100)
+    Send("C:\Users\Juan\Documents\Python")
+    Sleep(50)
+    Send("{Enter}")
+}
+
+; Types out the venv activation thing with Ctrl + Alt + V
+^!v:: {
+    Send("venv/Scripts/activate")
+    Sleep(50)
+    Send("{Enter}")
+    Sleep(100)
+    Send("cls")
+    Sleep(50)
+    Send("{Enter}")
+}
