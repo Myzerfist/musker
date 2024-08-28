@@ -1,5 +1,3 @@
-﻿; Example AHK v2 Script
-
 ; Run command prompt as admin with Ctrl + Alt + C
 ^!c:: {
     Send("{LWin down}r{LWin up}")
@@ -38,6 +36,15 @@
     Send("{LWin down}r{LWin up}")
     Sleep(100)
     Send("msedge.exe https://www.youtube.com")
+    Sleep(50)
+    Send("{Enter}")
+}
+
+; Run Acellus with Ctrl + Alt + A
+^!a:: {
+    Send("{LWin down}r{LWin up}")
+    Sleep(100)
+    Send("msedge.exe https://signin.acellus.com/sign-in/student/")
     Sleep(50)
     Send("{Enter}")
 }
